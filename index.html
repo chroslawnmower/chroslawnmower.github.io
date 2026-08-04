@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Christopher Lohmeyer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #f2ebdd; }
+  * { box-sizing: border-box; }
+  a { color: #1f6f78; text-decoration: none; }
+  a:hover { color: #14545c; text-decoration: underline; }
+  @media (max-width: 760px) {
+    #about { grid-template-columns: 1fr !important; gap: 30px !important; }
+    [data-row="split"] { grid-template-columns: 1fr !important; gap: 4px !important; }
+    [data-photo="1"] { max-width: 280px; }
+    [data-nav="1"] { flex-wrap: wrap !important; gap: 10px 18px !important; padding: 12px 20px !important; }
+    [data-page="1"] { padding: 44px 20px 72px !important; }
+    h1 { font-size: 36px !important; }
+    h2 { margin-top: 56px !important; }
+  }
+  .btn1:hover { background:#dfe9e4; text-decoration:none }
+  .btn2:hover { color:#2a2724; text-decoration:none }
+  .btn3:hover { color:#2a2724; text-decoration:none }
+</style>
+</head>
+<body>
+<div style="background:#f2ebdd;color:#2a2724;font-family:'Libre Franklin',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.62;min-height:100vh;-webkit-font-smoothing:antialiased">
+
+  <div style="border-bottom:1px solid #ddd3bf;position:sticky;top:0;background:rgba(242,235,221,0.94);backdrop-filter:blur(6px);z-index:10">
+    <div data-nav="1" style="max-width:920px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <div></div>
+      <div style="display:flex;align-items:center;gap:22px;font-size:14.5px">
+        <a href="#about" style="color:#1f6f78">about</a>
+        <a href="#research" style="color:#3d3a36">research</a>
+        <a href="#publications" style="color:#3d3a36">publications</a>
+        <a href="#news" style="color:#3d3a36">news</a>
+        <a href="#work" style="color:#3d3a36">work</a>
+        <a href="#education" style="color:#3d3a36">education</a>
+        <a href="cv.pdf" target="_blank" rel="noopener" style="color:#3d3a36">CV</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="top" data-page="1" style="max-width:920px;margin:0 auto;padding:64px 32px 96px">
+
+    <h1 style="font-size:46px;line-height:1.08;font-weight:700;margin:0 0 40px;letter-spacing:-0.02em">Christopher <span style="font-weight:200;color:#8a837a">Lohmeyer</span></h1>
+
+    <div id="about" style="display:grid;grid-template-columns:1fr 300px;gap:44px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:18px;text-wrap:pretty">
+        <p style="margin:0">I'm a 4th year physics student at the <a href="https://www.berkeley.edu/">University of California, Berkeley</a>. I build statistical evidence triage systems that keep language models honest about what they don't know, applied to early stage aerospace and defense feasibility review. My main interest is uncertainty quantification, particularly keeping the model that gathers evidence separate from the system that renders the verdict.</p>
+        <p style="margin:0">I worked as a Systems Engineering Intern at the NASA Jet Propulsion Laboratory in Division 31, where I co-developed an AI assisted early stage mission formulation framework. That work led to a Caltech provisional patent application and a paper presented at AIAA SciTech 2026. I was fortunate to be mentored there by Kelli McCoy, Jonathan Sauder, Benjamin Nuernberger, and Rob Royce.</p>
+        <p style="margin:0">I also served as Lead Hyperspectral Camera Engineer for SolarSURFER, a solar sail CubeSat team led by the Johns Hopkins University Applied Physics Laboratory.</p>
+        <p style="margin:0">I'm applying to M.S. and Ph.D. programs in aerospace engineering, computational science, and applied mathematics, and I'm equally interested in research roles in industry.</p>
+        <p style="margin:0;color:#6f6a63">You can reach me at <a href="mailto:chrishlohmeyer@berkeley.edu">chrishlohmeyer@berkeley.edu</a>.</p>
+      </div>
+      <div data-photo="1" style="display:flex;flex-direction:column;gap:10px">
+        <img src="photo.jpg" alt="Christopher Lohmeyer" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border:1px solid #d6cbb4" />
+      </div>
+    </div>
+
+    <h2 id="research" style="font-size:30px;font-weight:300;margin:70px 0 18px;color:#201e1b">research</h2>
+    <p style="margin:0;max-width:700px;text-wrap:pretty">My research centers on uncertainty quantification and evidence based reasoning, building on the JPL work into a framework where a language model retrieves relevant precedent and a separate statistical layer determines the final verdict, keeping AI assisted engineering decisions honest about their own confidence.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">uncertainty quantification</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">evidence-based reasoning</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">mission formulation</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">LLM calibration</span>
+    </div>
+
+    <h2 id="publications" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">publications</h2>
+    <div style="display:flex;flex-direction:column;gap:26px;max-width:760px">
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Jan 2026</div>
+        <div style="text-wrap:pretty">
+          <div style="font-weight:600;color:#201e1b">REIMAGINE: A Modular AI-Assisted Early Mission Formulation Process</div>
+          <div style="margin-top:4px;color:#45413c">Demagall, A., Pacleb, N., <strong style="font-weight:600;color:#201e1b">Lohmeyer, C. H.</strong>, Amar, S., Koliwad, R., McCoy, K., Nuernberger, B., Sauder, J., Royce, R.</div>
+          <div style="margin-top:4px;color:#6f6a63;font-style:italic">AIAA SciTech Forum 2026, Orlando, FL</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#7d766d;margin-top:4px">Not yet approved for public release.</div>
+          <div style="margin-top:6px;color:#45413c">A seven-module LLM-powered process for AI-assisted early space mission formulation, applied to a CADRE lunar night survival case study. Patent pending.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="news" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">news</h2>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Feb 2026</div>
+        <div style="text-wrap:pretty">A U.S. provisional patent application (CIT-9488-P) covering REIMAGINE was filed through Caltech on behalf of NASA JPL.</div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Jan 2026</div>
+        <div style="text-wrap:pretty">Presented <em>REIMAGINE: A Modular AI-Assisted Early Mission Formulation Process</em> at the <a href="https://www.aiaa.org/scitech">AIAA SciTech Forum</a> in Orlando, FL.</div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">May 2025</div>
+        <div style="text-wrap:pretty">Started as an AI Systems Engineering Intern at the NASA Jet Propulsion Laboratory, Division 31, working on AI-assisted mission concept evaluation.</div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Jan 2025</div>
+        <div style="text-wrap:pretty">Became Camera Lead for SolarSURFER, a solar sail CubeSat carrying a hyperspectral Earth observation payload, developed with the Johns Hopkins University Applied Physics Laboratory.</div>
+      </div>
+    </div>
+
+    <h2 id="work" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">work</h2>
+    <div style="display:flex;flex-direction:column;gap:26px">
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start;padding-bottom:26px;border-bottom:1px solid #ddd3bf">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">May 2025<br />— present</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;color:#201e1b">MABEL</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">Independent research initiated at NASA JPL</div>
+          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">An evidence-triage framework for early-stage concept feasibility assessment, addressing novelty collapse: the failure mode in which LLM-based assessors penalize novel concepts for the absence of historical precedent rather than for lack of merit.</p>
+          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Two layers. A retrieval model surfaces historical precedents; a deterministic statistical layer renders the verdict using weighted maximum-likelihood estimation, Fisher information, and Wilson-score 90% confidence intervals, producing EVIDENCE-BACKED / INFEASIBLE / UNCERTAIN-NOVEL classifications. The system declines to rule when evidence is insufficient, preserving genuinely novel concepts that a confidence-maximizing assessor would discard.</p>
+          <p style="margin:0;color:#45413c;text-wrap:pretty">Implemented locally on quantized open-weight models via llama.cpp. Currently running a 20-case validation study against historical mission concepts to characterize verdict accuracy and interval calibration. <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#7d766d">Not yet publicly released.</span></p>
+        </div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start;padding-bottom:26px;border-bottom:1px solid #ddd3bf">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">May&nbsp;— Aug<br />2025</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;color:#201e1b">Project REIMAGINE</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">NASA JPL, Division 31 · AI Systems Engineering Intern</div>
+          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Co-developed a seven-module LLM-powered engineering co-pilot that converts raw mission ideas into ranked concept alternatives and trade-study visualizations in minutes. Covered by a U.S. provisional patent application filed through Caltech; presented at AIAA SciTech 2026.</p>
+          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Built SCORE, an agentic multi-agent screening system that turns requirements and key performance parameters into decision-ready briefs within a single meeting. Also created a physics-based simulation of the CADRE lunar daytime autonomous rover mission and used the REIMAGINE toolkit to explore feasibility for a lunar nighttime scenario in minutes; senior systems engineers said the equivalent study once took more than six months.</p>
+          <p style="margin:0;color:#45413c;text-wrap:pretty">Identified novelty collapse in the assessment pipeline, a systematic bias against unprecedented concepts, and prototyped the statistical triage approach that became MABEL.</p>
+        </div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">Jan&nbsp;— Jun<br />2025</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;color:#201e1b">SolarSURFER Hyperspectral Imaging Payload</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">SolarSURFER Development Crew · UC Berkeley, Johns Hopkins University, Olin College of Engineering · Camera Lead</div>
+          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Led R&amp;D of the nine-camera hyperspectral imaging payload for SolarSURFER, a solar sail CubeSat for Earth observation, coordinating optical, mechanical, and thermal subsystems to achieve 400–2000&nbsp;nm coverage from sun-synchronous orbit. Implemented the CMOS-based camera system within 1U CubeSat constraints, addressing thermal management, data routing, and power distribution while maintaining calibration across extended temperature ranges.</p>
+          <p style="margin:0;color:#45413c;text-wrap:pretty">Developed MATLAB simulations for optimal imaging geometry in sun-synchronous polar orbit, and identified and corrected three mission-critical design flaws through physics-based analysis. Collaborated with Dr. Kim Aaron, JPL Chief Engineer for Architecture and Formulation, to validate system architecture and mission design feasibility.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="education" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">education</h2>
+    <div style="display:flex;flex-direction:column;gap:26px">
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start;padding-bottom:26px;border-bottom:1px solid #ddd3bf">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">expected<br />May 2027</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;color:#201e1b">University of California, Berkeley</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 0">B.A. in Physics</div>
+        </div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start;padding-bottom:26px;border-bottom:1px solid #ddd3bf">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">Aug 2025<br />— May 2026</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;color:#201e1b">Háskóli Íslands (University of Iceland), Reykjavík</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 0">Physics, exchange program</div>
+        </div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">Aug 2019<br />— May 2024</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;color:#201e1b">Irvine Valley College</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 0">A.S. in Physics · A.A. in Cinematography and Film Production</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:16px;margin-top:70px;padding-top:32px;border-top:1px solid #ddd3bf;flex-wrap:wrap">
+      <a href="cv.pdf" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#1f6f78;border:1px solid #a3c3c7;padding:10px 18px" class="btn1">Download CV (PDF)</a>
+      <a href="mailto:chrishlohmeyer@berkeley.edu" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#6f6a63;border:1px solid #d6cbb4;padding:10px 18px" class="btn2">Email</a>
+      <a href="https://github.com/chroslawnmower" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#6f6a63;border:1px solid #d6cbb4;padding:10px 18px" class="btn3">GitHub</a>
+      
+    </div>
+
+    <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#948d84;margin-top:36px">© 2026 Christopher Lohmeyer · Hosted on GitHub Pages</div>
+
+  </div>
+</div>
+</body>
+</html>
