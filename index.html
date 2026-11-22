@@ -35,7 +35,7 @@
       <div style="display:flex;align-items:center;gap:22px;font-size:14.5px">
         <a href="#about" style="color:#1f6f78">about</a>
         <a href="#research" style="color:#3d3a36">research</a>
-        <a href="#publications" style="color:#3d3a36">publications</a>
+        <a href="#presentations" style="color:#3d3a36">presentations</a>
         <a href="#news" style="color:#3d3a36">news</a>
         <a href="#work" style="color:#3d3a36">work</a>
         <a href="#education" style="color:#3d3a36">education</a>
@@ -50,9 +50,10 @@
 
     <div id="about" style="display:grid;grid-template-columns:1fr 300px;gap:44px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:18px;text-wrap:pretty">
-        <p style="margin:0">I'm a 4th year physics student at the <a href="https://www.berkeley.edu/">University of California, Berkeley</a>. I build statistical evidence triage systems that keep language models honest about what they don't know, applied to early stage aerospace and defense feasibility review. My main interest is uncertainty quantification, particularly keeping the model that gathers evidence separate from the system that renders the verdict.</p>
-        <p style="margin:0">I worked as a Systems Engineering Intern at the NASA Jet Propulsion Laboratory (Division 31), where I co-developed an AI assisted early stage mission formulation framework. That work led to a Caltech provisional patent application and a paper presented at AIAA SciTech 2026. I was fortunate to be mentored there by Kelli McCoy, Jonathan Sauder, Benjamin Nuernberger, and Rob Royce.</p>
-        <p style="margin:0">I also served as Lead Hyperspectral Camera Engineer for SolarSURFER, a solar sail CubeSat team led by the Johns Hopkins University Applied Physics Laboratory.</p>
+        <p style="margin:0">I'm a 4th year physics student at the <a href="https://www.berkeley.edu/">University of California, Berkeley</a>. My main interest is uncertainty quantification, knowing how much to trust a result and saying so honestly, whether it comes from an engineering model, an AI system, or a spacecraft instrument. I've applied it to AI assisted feasibility review for early stage space missions, and now to particle data from NASA's MAVEN Mars orbiter.</p>
+        <p style="margin:0">I worked as a Systems Engineering Intern at the NASA Jet Propulsion Laboratory, where I co-developed an AI assisted early stage mission formulation framework. That work led to a Caltech provisional patent application, a talk at AIAA SciTech 2026, and a journal manuscript now under review. I was fortunate to be mentored there by Kelli McCoy, Jonathan Sauder, Benjamin Nuernberger, and Rob Royce.</p>
+        <p style="margin:0">I'm currently doing research at UC Berkeley's Space Sciences Laboratory with the Solar Energetic Particle instrument on NASA's MAVEN Mars orbiter, where I'm starting to add uncertainty quantification to the analysis.</p>
+        <p style="margin:0">I was also Camera Lead for SolarSURFER, a student solar sail CubeSat team at Johns Hopkins University, with support from the Johns Hopkins Applied Physics Laboratory.</p>
         <p style="margin:0">I'm applying to M.S. and Ph.D. programs in aerospace engineering, computational science, and applied mathematics, and I'm equally interested in research roles in industry.</p>
         <p style="margin:0;color:#6f6a63">You can reach me at <a href="mailto:chrishlohmeyer@berkeley.edu">chrishlohmeyer@berkeley.edu</a>.</p>
       </div>
@@ -62,15 +63,16 @@
     </div>
 
     <h2 id="research" style="font-size:30px;font-weight:300;margin:70px 0 18px;color:#201e1b">research</h2>
-    <p style="margin:0;max-width:700px;text-wrap:pretty">My research centers on uncertainty quantification and evidence based reasoning, building on the JPL work into a framework where a language model retrieves relevant precedent and a separate statistical layer determines the final verdict, keeping AI assisted engineering decisions honest about their own confidence.</p>
+    <p style="margin:0;max-width:700px;text-wrap:pretty">My research centers on uncertainty quantification across engineering and science. At the NASA Jet Propulsion Laboratory that meant AI assisted engineering decisions, which led to MABEL, a framework where a language model retrieves precedent and a separate statistical layer renders the verdict. At the Space Sciences Laboratory it means telling real signals apart from instrument effects in MAVEN particle data.</p>
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
       <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">uncertainty quantification</span>
       <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">evidence-based reasoning</span>
       <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">mission formulation</span>
       <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">LLM calibration</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#1f6f78;background:#dfe9e4;padding:4px 9px">spacecraft instrument data</span>
     </div>
 
-    <h2 id="publications" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">publications</h2>
+    <h2 id="presentations" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">presentations</h2>
     <div style="display:flex;flex-direction:column;gap:26px;max-width:760px">
       <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Jan 2026</div>
@@ -78,7 +80,7 @@
           <div style="font-weight:600;color:#201e1b">REIMAGINE: A Modular AI-Assisted Early Mission Formulation Process</div>
           <div style="margin-top:4px;color:#45413c">Demagall, A., Pacleb, N., <strong style="font-weight:600;color:#201e1b">Lohmeyer, C. H.</strong>, Amar, S., Koliwad, R., McCoy, K., Nuernberger, B., Sauder, J., Royce, R.</div>
           <div style="margin-top:4px;color:#6f6a63;font-style:italic">AIAA SciTech Forum 2026, Orlando, FL</div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#7d766d;margin-top:4px">Not yet approved for public release.</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#7d766d;margin-top:4px">Oral presentation. A journal manuscript on this work is under review.</div>
           <div style="margin-top:6px;color:#45413c">A seven-module LLM-powered process for AI-assisted early space mission formulation, applied to a CADRE lunar night survival case study. Patent pending.</div>
         </div>
       </div>
@@ -87,8 +89,16 @@
     <h2 id="news" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">news</h2>
     <div style="display:flex;flex-direction:column;gap:22px">
       <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Sep 2026</div>
+        <div style="text-wrap:pretty">Joined the MAVEN SEP research group at UC Berkeley's Space Sciences Laboratory, building a catalog of rare instrument saturation events.</div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">May 2026</div>
+        <div style="text-wrap:pretty">Submitted a journal manuscript on REIMAGINE to the AIAA Journal of Aerospace Information Systems, now under review.</div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Feb 2026</div>
-        <div style="text-wrap:pretty">A U.S. provisional patent application (CIT-9488-P) covering REIMAGINE was filed through Caltech on behalf of NASA JPL.</div>
+        <div style="text-wrap:pretty">A U.S. provisional patent application (CIT-9488-P) covering REIMAGINE was filed through Caltech on behalf of the NASA Jet Propulsion Laboratory.</div>
       </div>
       <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Jan 2026</div>
@@ -96,22 +106,31 @@
       </div>
       <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">May 2025</div>
-        <div style="text-wrap:pretty">Started as an AI Systems Engineering Intern at the NASA Jet Propulsion Laboratory, Division 31, working on AI-assisted mission concept evaluation.</div>
+        <div style="text-wrap:pretty">Started as an AI Systems Engineering Intern at the NASA Jet Propulsion Laboratory, working on AI-assisted mission concept evaluation.</div>
       </div>
       <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;color:#3d3a36;padding-top:3px">Jan 2025</div>
-        <div style="text-wrap:pretty">Became Camera Lead for SolarSURFER, a solar sail CubeSat carrying a hyperspectral Earth observation payload, developed with the Johns Hopkins University Applied Physics Laboratory.</div>
+        <div style="text-wrap:pretty">Became Camera Lead for SolarSURFER, a student solar sail CubeSat at Johns Hopkins University carrying a hyperspectral Earth observation payload.</div>
       </div>
     </div>
 
     <h2 id="work" style="font-size:30px;font-weight:300;margin:70px 0 24px;color:#201e1b">work</h2>
     <div style="display:flex;flex-direction:column;gap:26px">
       <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start;padding-bottom:26px;border-bottom:1px solid #ddd3bf">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">Sep 2026<br />— present</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;color:#201e1b">MAVEN Solar Energetic Particle (SEP) Research</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">UC Berkeley Space Sciences Laboratory · Undergraduate Researcher, Dr. Ali Rahmati's group</div>
+          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Working with data from the SEP instrument on NASA's MAVEN Mars orbiter, turning signals usually discarded as background into science. Reproduced published SEP analyses in IDL/SPEDAS, then followed up on detector background effects and explored whether Scorpius X-1 X-ray occultations could reveal atmospheric changes during Mars's 2018 global dust storm.</p>
+          <p style="margin:0;color:#45413c;text-wrap:pretty">Currently building the group's catalog of SEP saturation events. Found a first candidate in August 2018 data and cross-checked it against MAVEN's solar wind, magnetic field, and instrument pointing measurements. Now starting to add uncertainty quantification to the analysis.</p>
+        </div>
+      </div>
+      <div data-row="split" style="display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start;padding-bottom:26px;border-bottom:1px solid #ddd3bf">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">May 2025<br />— present</div>
         <div>
           <div style="font-size:17px;font-weight:600;color:#201e1b">MABEL</div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">Independent research initiated at NASA JPL</div>
-          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">An evidence-triage framework for early-stage concept feasibility assessment, addressing novelty collapse: the failure mode in which LLM-based assessors penalize novel concepts for the absence of historical precedent rather than for lack of merit.</p>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">Independent research initiated at the NASA Jet Propulsion Laboratory</div>
+          <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">An evidence-triage framework for early-stage concept feasibility assessment, addressing novelty collapse, the failure mode in which LLM-based assessors penalize novel concepts for the absence of historical precedent rather than for lack of merit.</p>
           <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Two layers. A retrieval model surfaces historical precedents; a deterministic statistical layer renders the verdict using weighted maximum-likelihood estimation, Fisher information, and Wilson-score 90% confidence intervals, producing EVIDENCE-BACKED / INFEASIBLE / UNCERTAIN-NOVEL classifications. The system declines to rule when evidence is insufficient, preserving genuinely novel concepts that a confidence-maximizing assessor would discard.</p>
           <p style="margin:0;color:#45413c;text-wrap:pretty">Implemented locally on quantized open-weight models via llama.cpp. Currently running a 20-case validation study against historical mission concepts to characterize verdict accuracy and interval calibration. <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#7d766d">Not yet publicly released.</span></p>
         </div>
@@ -120,7 +139,7 @@
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">May&nbsp;— Aug<br />2025</div>
         <div>
           <div style="font-size:17px;font-weight:600;color:#201e1b">Project REIMAGINE</div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">NASA JPL, Division 31 · AI Systems Engineering Intern</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">NASA Jet Propulsion Laboratory · AI Systems Engineering Intern</div>
           <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Co-developed a seven-module LLM-powered engineering co-pilot that converts raw mission ideas into ranked concept alternatives and trade-study visualizations in minutes. Covered by a U.S. provisional patent application filed through Caltech; presented at AIAA SciTech 2026.</p>
           <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Built SCORE, an agentic multi-agent screening system that turns requirements and key performance parameters into decision-ready briefs within a single meeting. Also created a physics-based simulation of the CADRE lunar daytime autonomous rover mission and used the REIMAGINE toolkit to explore feasibility for a lunar nighttime scenario in minutes; senior systems engineers said the equivalent study once took more than six months.</p>
           <p style="margin:0;color:#45413c;text-wrap:pretty">Identified novelty collapse in the assessment pipeline, a systematic bias against unprecedented concepts, and prototyped the statistical triage approach that became MABEL.</p>
@@ -132,7 +151,7 @@
           <div style="font-size:17px;font-weight:600;color:#201e1b">SolarSURFER Hyperspectral Imaging Payload</div>
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 10px">SolarSURFER Development Crew · UC Berkeley, Johns Hopkins University, Olin College of Engineering · Camera Lead</div>
           <p style="margin:0 0 10px;color:#45413c;text-wrap:pretty">Led R&amp;D of the nine-camera hyperspectral imaging payload for SolarSURFER, a solar sail CubeSat for Earth observation, coordinating optical, mechanical, and thermal subsystems to achieve 400–2000&nbsp;nm coverage from sun-synchronous orbit. Implemented the CMOS-based camera system within 1U CubeSat constraints, addressing thermal management, data routing, and power distribution while maintaining calibration across extended temperature ranges.</p>
-          <p style="margin:0;color:#45413c;text-wrap:pretty">Developed MATLAB simulations for optimal imaging geometry in sun-synchronous polar orbit, and identified and corrected three mission-critical design flaws through physics-based analysis. Collaborated with Dr. Kim Aaron, JPL Chief Engineer for Architecture and Formulation, to validate system architecture and mission design feasibility.</p>
+          <p style="margin:0;color:#45413c;text-wrap:pretty">Developed MATLAB simulations for optimal imaging geometry in sun-synchronous polar orbit, and identified and corrected three mission-critical design flaws through physics-based analysis. Collaborated with Dr. Kim Aaron, NASA Jet Propulsion Laboratory Chief Engineer for Architecture and Formulation, to validate system architecture and mission design feasibility.</p>
         </div>
       </div>
     </div>
@@ -157,7 +176,7 @@
         <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#3d3a36;padding-top:4px">Aug 2019<br />— May 2024</div>
         <div>
           <div style="font-size:17px;font-weight:600;color:#201e1b">Irvine Valley College</div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 0">A.S. in Physics · A.A. in Cinematography and Film Production</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7d766d;margin:4px 0 0">A.S.-T in Physics · A.S. in Natural Sciences · A.A. in Humanities · A.A. in Liberal Studies</div>
         </div>
       </div>
     </div>
